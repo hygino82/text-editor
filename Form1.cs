@@ -210,5 +210,30 @@ namespace EditorTXT
             txtConteudo.SelectionStart = index + dataHora.Length;
         }
         #endregion
+
+        #region Menu Formatar
+        private void mFormatarQuebraLinha_Click(object sender, EventArgs e)
+        {
+            txtConteudo.WordWrap = mFormatarQuebraLinha.Checked;
+        }
+
+        private void mFormatarFonte_Click(object sender, EventArgs e)
+        {
+            FontDialog fonte = new FontDialog();
+            fonte.ShowColor = true;
+            fonte.ShowEffects = true;
+
+            fonte.Font = txtConteudo.Font;
+            fonte.Color = txtConteudo.ForeColor;
+
+            DialogResult result = fonte.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                txtConteudo.Font = fonte.Font;
+                txtConteudo.ForeColor = fonte.Color;
+            }
+        }
+        #endregion
     }
 }
