@@ -235,5 +235,35 @@ namespace EditorTXT
             }
         }
         #endregion
+
+        #region Menu Exibir
+        private void mExibirZoomAmpliar_Click(object sender, EventArgs e)
+        {
+            txtConteudo.ZoomFactor += 0.1f;
+            AtualizarZoomStatusbar(txtConteudo.ZoomFactor);
+        }
+
+        private void mExibirZoomReduzir_Click(object sender, EventArgs e)
+        {
+            txtConteudo.ZoomFactor -= 0.1f;
+            AtualizarZoomStatusbar(txtConteudo.ZoomFactor);
+        }
+
+        private void mExibirZoomRestaurar_Click(object sender, EventArgs e)
+        {
+            txtConteudo.ZoomFactor = 1.0f;
+            AtualizarZoomStatusbar(txtConteudo.ZoomFactor);
+        }
+
+        private void barraDeStatusToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            statusBar.Visible = barraDeStatusToolStripMenuItem.Checked;
+        }
+
+        private void AtualizarZoomStatusbar(float zoom)
+        {
+            statusBarLabel.Text = (int)(zoom * 100.0) + "%";
+        }
+        #endregion
     }
 }

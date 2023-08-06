@@ -270,20 +270,23 @@
             // mExibirZoomAmpliar
             // 
             this.mExibirZoomAmpliar.Name = "mExibirZoomAmpliar";
-            this.mExibirZoomAmpliar.Size = new System.Drawing.Size(149, 26);
+            this.mExibirZoomAmpliar.Size = new System.Drawing.Size(180, 26);
             this.mExibirZoomAmpliar.Text = "Ampliar";
+            this.mExibirZoomAmpliar.Click += new System.EventHandler(this.mExibirZoomAmpliar_Click);
             // 
             // mExibirZoomReduzir
             // 
             this.mExibirZoomReduzir.Name = "mExibirZoomReduzir";
-            this.mExibirZoomReduzir.Size = new System.Drawing.Size(149, 26);
+            this.mExibirZoomReduzir.Size = new System.Drawing.Size(180, 26);
             this.mExibirZoomReduzir.Text = "Reduzir";
+            this.mExibirZoomReduzir.Click += new System.EventHandler(this.mExibirZoomReduzir_Click);
             // 
             // mExibirZoomRestaurar
             // 
             this.mExibirZoomRestaurar.Name = "mExibirZoomRestaurar";
-            this.mExibirZoomRestaurar.Size = new System.Drawing.Size(149, 26);
+            this.mExibirZoomRestaurar.Size = new System.Drawing.Size(180, 26);
             this.mExibirZoomRestaurar.Text = "Restaurar";
+            this.mExibirZoomRestaurar.Click += new System.EventHandler(this.mExibirZoomRestaurar_Click);
             // 
             // barraDeStatusToolStripMenuItem
             // 
@@ -293,6 +296,7 @@
             this.barraDeStatusToolStripMenuItem.Name = "barraDeStatusToolStripMenuItem";
             this.barraDeStatusToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.barraDeStatusToolStripMenuItem.Text = "Barra de status";
+            this.barraDeStatusToolStripMenuItem.Click += new System.EventHandler(this.barraDeStatusToolStripMenuItem_Click);
             // 
             // mAjuda
             // 
