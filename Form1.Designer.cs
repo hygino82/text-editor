@@ -270,21 +270,21 @@
             // mExibirZoomAmpliar
             // 
             this.mExibirZoomAmpliar.Name = "mExibirZoomAmpliar";
-            this.mExibirZoomAmpliar.Size = new System.Drawing.Size(180, 26);
+            this.mExibirZoomAmpliar.Size = new System.Drawing.Size(149, 26);
             this.mExibirZoomAmpliar.Text = "Ampliar";
             this.mExibirZoomAmpliar.Click += new System.EventHandler(this.mExibirZoomAmpliar_Click);
             // 
             // mExibirZoomReduzir
             // 
             this.mExibirZoomReduzir.Name = "mExibirZoomReduzir";
-            this.mExibirZoomReduzir.Size = new System.Drawing.Size(180, 26);
+            this.mExibirZoomReduzir.Size = new System.Drawing.Size(149, 26);
             this.mExibirZoomReduzir.Text = "Reduzir";
             this.mExibirZoomReduzir.Click += new System.EventHandler(this.mExibirZoomReduzir_Click);
             // 
             // mExibirZoomRestaurar
             // 
             this.mExibirZoomRestaurar.Name = "mExibirZoomRestaurar";
-            this.mExibirZoomRestaurar.Size = new System.Drawing.Size(180, 26);
+            this.mExibirZoomRestaurar.Size = new System.Drawing.Size(149, 26);
             this.mExibirZoomRestaurar.Text = "Restaurar";
             this.mExibirZoomRestaurar.Click += new System.EventHandler(this.mExibirZoomRestaurar_Click);
             // 
@@ -312,12 +312,14 @@
             this.mAjudaExibir.Name = "mAjudaExibir";
             this.mAjudaExibir.Size = new System.Drawing.Size(218, 26);
             this.mAjudaExibir.Text = "Exibir ajuda";
+            this.mAjudaExibir.Click += new System.EventHandler(this.mAjudaExibir_Click);
             // 
             // mAjudaSobre
             // 
             this.mAjudaSobre.Name = "mAjudaSobre";
             this.mAjudaSobre.Size = new System.Drawing.Size(218, 26);
             this.mAjudaSobre.Text = "Sobre o Editor TXT";
+            this.mAjudaSobre.Click += new System.EventHandler(this.mAjudaSobre_Click);
             // 
             // statusBar
             // 

@@ -264,6 +264,21 @@ namespace EditorTXT
         {
             statusBarLabel.Text = (int)(zoom * 100.0) + "%";
         }
+
+        #endregion
+
+        #region Menu Ajuda
+        private void mAjudaExibir_Click(object sender, EventArgs e)
+        {
+            FormAjuda f = new FormAjuda();
+            f.Show();
+        }
+
+        private void mAjudaSobre_Click(object sender, EventArgs e)
+        {
+            FormSobre f = new FormSobre();
+            f.Show();
+        }
         #endregion
     }
 }
